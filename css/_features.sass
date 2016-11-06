@@ -1,0 +1,86 @@
+.features
+	text-align: center
+	position: relative
+	padding: 70px 0	
+	text-align: center
+
+	.features-text
+		padding: 10px 150px 60px 150px
+
+	#bike-zoom 
+		transition: background .5s ease-in-out
+		
+	.box-img	
+		width: 80%	
+		margin: 0 auto
+
+		.zoom-bike
+			transition: transform .5s ease-in-out
+
+
+	.zoom-icons
+		position: absolute
+		left: 0
+		top: 50%
+		background: #3c3c3c
+		padding: 15px 10px
+		border: 1px solid #949494
+
+		&::before 
+			content: ""
+			position: absolute
+			top: -3px 
+			left: 0
+			width: 108%
+			height: 160px
+			background: #3c3c3c
+			z-index: -1
+
+		.fa 
+			display: block
+			margin: 10px 0
+			color: #767676
+			transition: color .3s ease-in-out
+
+			&:hover 
+				color: #fff
+				cursor: pointer
+
+	.zoom-images
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translate(0, -25%)
+
+		.zoom-img 	
+			width: 150px 
+			height: 100px
+			margin-bottom: 10px
+			transition: all .5s ease-in-out
+			position: relative
+
+			&::before 
+				content: ""
+				position: absolute
+				top: 0
+				left: 0 
+				width: 100%
+				height: 100%
+				transition: all .5s ease-in-out
+
+			&:hover::before 
+				background: rgba(60,60,60,.3)
+				cursor: pointer 
+
+
+		.thumbnail-1
+			background: url("../images/thumbnail-1.jpg") no-repeat top center
+			background-size: cover		
+
+		.thumbnail-2
+			background: url("../images/thumbnail-2.jpg") no-repeat top center
+			background-size: cover		
+
+		.thumbnail-3
+			background: url("../images/thumbnail-3.jpg") no-repeat top center
+			background-size: cover		

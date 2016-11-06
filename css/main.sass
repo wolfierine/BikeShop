@@ -1,0 +1,110 @@
+$header-font: 'Old Standard TT', serif
+$primary-font: 'Ubuntu', sans-serif
+$logo-font: 'Lobster', cursive
+
+html, body, ul, li, h1, h2, h3, h4, h5, h6, img, p 
+	margin: 0
+	padding: 0
+	color: #6a6a6a
+	font:
+		family: 'Ubuntu', Arial, Helvetica, sans-serif
+
+body 
+	font:
+		size: 14px
+
+a 
+	text-decoration: none	
+
+header, section, article, footer 
+	display: block
+
+h2 
+	color: #3c3c3c
+	font: 
+		family: $header-font
+		weight: 400
+		size: 40px
+	padding-bottom: 10px	
+	letter-spacing: .5px	
+
+p 
+	color: #6a6a6a
+	font: 
+		family: $primary-font
+		weight: 300
+		size: 16px
+	line-height: 25px	
+	padding: 10px 0
+
+
+.container
+	max-width: 1024px
+	margin: 0 auto
+
+.text-normal
+	color: #6a6a6a
+
+.text-dark
+	color: #3c3c3c	
+
+.list 
+	list-style-type: none 
+.list-item
+	display: inline-block
+
+.btn 
+	background: #3c3c3c
+	color: #fff 
+	display: inline-block 
+	padding: 10px 25px 
+	border: 1px solid #949494
+	text-transform: uppercase
+	font: 
+		family: $primary-font
+	position: relative
+	transition: all .5s ease-in-out
+	
+	&::before
+		content: ""
+		position: absolute
+		top: -3px 
+		left: -3px 
+		width: 105%
+		height: 42px
+		background: #3c3c3c
+		z-index: -1
+
+	&:hover 
+		box-shadow: 0 0 30px #000
+
+
+
+.rwd-img
+	display: block 
+	max-width: 100%	 
+
+
+/* CLEARFIX */
+.clearfix:after
+	visibility: hidden
+	display: block
+	font-size: 0
+	content: " "
+	clear: both
+	height: 0
+.clearfix 
+	display: inline-block 
+/* start commented backslash hack \*/
+* html .clearfix 
+	height: 1%
+.clearfix  
+	display: block 
+/* close commented backslash hack */				
+
+@import header
+@import about
+@import features
+@import components 
+@import footer
+@import media

@@ -1,0 +1,39 @@
+.our-history
+	
+	.text-body, .img-box, .img-bg 	
+		width: 50%
+
+	.text-L, .img-bg
+		float: left 
+	.text-R, .img-box
+		float: right
+
+	.text-R
+		border-left: 1px solid #dadada
+		position: relative
+
+		&::before
+			content: ""
+			position: absolute
+			top: 50%
+			left: -30%
+			width: 30%
+			height: 1px 
+			background: #dadada
+			z-index: -1	
+
+	.text-body
+		margin-top: 100px
+		box-sizing: border-box
+		padding: 0 50px
+
+		.btn 
+			margin-top: 20px
+
+	.img-box
+		margin-top: 50px
+
+	.img-bg	
+		height: 500px
+		background: transparent url("../images/bike-with-basket.png") no-repeat left center
+		background-size: contain
